@@ -1,23 +1,44 @@
-# Terraform AWS Infrastructure Project
+# AWS Infrastructure Automation using Terraform
 
-## Tools
+## Project Overview
+This project demonstrates Infrastructure as Code (IaC) using Terraform to provision AWS resources automatically. Instead of creating resources manually through the AWS Console, Terraform is used to create and manage the infrastructure.
+
+## Technologies Used
 - Terraform
-- AWS EC2
+- AWS
+- EC2
+- VPC
+- Security Groups
 - Git
 - GitHub
 
-## Resources Created
-- EC2 Instance
+## Project Files
+- main.tf – Defines the AWS infrastructure.
+- provider.tf – Configures the AWS provider.
+- outputs.tf – Displays output values after deployment.
+- terraform.tfstate – Stores the current infrastructure state (not uploaded to GitHub).
+- .gitignore – Prevents sensitive files from being pushed to GitHub.
 
-## Commands Used
+## Features
+- Automated AWS infrastructure creation.
+- Infrastructure managed using Terraform.
+- Reusable and scalable configuration.
+- Version controlled with Git and GitHub.
 
+## Learning Outcomes
+- Learned Infrastructure as Code (IaC).
+- Created AWS resources using Terraform.
+- Managed infrastructure with Terraform commands.
+- Used Git and GitHub for version control.
+
+## Terraform Commands Used
+```bash
 terraform init
+terraform validate
 terraform plan
 terraform apply
-terraform output
 terraform destroy
+```
 
-## Outputs
-- Instance ID
-- Public IP
-- Public DNS
+## Author
+Sai Pragathi
